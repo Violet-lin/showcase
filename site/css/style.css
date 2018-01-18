@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.center {
+  margin: auto;
+  width: 80%;
+  max-width: 980;
+}
+
+ul {
+  /* margin: auto; */
+  background-color: coral;
+}
+
+li {
+  float: left;
+  padding: 20px;
+  cursor: pointer;
+}
+
+/* --- */
+
+.select-container {
+  margin: auto;
+  padding: 5px 0px 50px;
+  /* background-color: yellow; */
+}
+
+.parallax-container {
+  height: 600px;
+}
+
+.filtr-item img{
+  width:540px;
+}
+/* .parallax img {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */

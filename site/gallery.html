@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>JellyLab2.0</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+	<header>
+	</header>
+	<main>
+
+		<div class="parallax-container">
+			<div class="parallax"><img src="img/bg2.jpeg"></div>
+			<p class="grey-text text-darken-3 lighten-3">I am Violet Lin</p>
+		</div>
+		<div class="parallax-container">
+			<div class="parallax"><img src="img/bg1.jpeg"></div>
+		</div>
+		<div class="title center">
+			<h2>PORTFOLIO</h2>
+		</div>
+
+		<!-- start of gallery -->
+		<div class="select-container center">
+			<ul>
+
+				<li data-filter="all"> All items </li>
+
+				<li data-filter="des"> Design </li>
+
+				<li data-filter="code"> Coding </li>
+
+				<li data-filter="htcss"> HTML5 CSS </li>
+
+				<li data-filter="anim"> Animation </li>
+
+				<li data-filter="gam"> Game </li>
+
+				<li data-filter="jsonxml"> JSON/ XML </li>
+
+				<li data-shuffle> Shuffle items </li>
+
+				<li data-sortAsc> Ascending </li>
+
+				<li data-sortDesc> Descending </li>
+			</ul>
+		</div>
+		<div class="filtr-container center">
+
+			<div class="filtr-item" data-category="des" data-sort="value">
+				<img src="img/fb_mascot.jpg" alt="sample">     </div>
+
+			<div class="filtr-item" data-category="des" data-sort="value">
+				<img src="img/card_vision.jpg" alt="sample">     </div>
+
+			<div class="filtr-item" data-category="des" data-sort="value">
+				<img src="img/header_design.jpg" alt="sample">     </div>
+
+			<div class="filtr-item" data-category="code, des, jsonxml" data-sort="value">
+				<img src="img/game_m1.jpg" alt="sample">     </div>
+
+			<div class="filtr-item" data-category="des" data-sort="value">
+				<img src="img/bii_anniversary.jpg" alt="sample">     </div>
+
+			<div class="filtr-item" data-category="des, htcss, code" data-sort="value">
+				<img src="img/edm.jpg" alt="sample">     </div>
+
+			<div class="filtr-item" data-category="des, anim" data-sort="value">
+				<img src="img/anim_storyboard.png" alt="sample">     </div>
+
+			<div class="filtr-item" data-category="des, anim" data-sort="value">
+				<img src="img/anim.png" alt="sample">     </div>
+
+			<div class="filtr-item" data-category="code, des" data-sort="value">
+				<img src="img/web_bb.png" alt="sample">     </div>
+
+			<div class="filtr-item" data-category="htcss, code" data-sort="value">
+				<img src="img/web_mulitlang.png" alt="sample">     </div>
+
+			<div class="filtr-item" data-category="htcss,code" data-sort="value">
+				<img src="img/form_snow.png" alt="sample">     </div>
+		</div>
+
+	</main>
+	<footer class="page-footer">
+		<div class="container">
+			<a href="mailto:jellylab@yahoo.com">jellylab@yahoo.com</a>
+		</div>
+	</footer>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/1.2.5/jquery.filterizr.min.js"></script>
+	<script>
+		var filterizd = $('.filtr-container').filterizr({});
+
+		$(document).ready(function() {
+			$('.parallax').parallax();
+		});
+	</script>
+</body>
+
+</html>
