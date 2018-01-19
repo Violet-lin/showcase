@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="dist/css/lightbox.min.css">
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -56,39 +57,56 @@
       </div>
       <div class="row">
         <div class="filtr-container ">
-
           <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1" data-sort="design">
-            <img class="responsive-img" src="img/fb_mascot.jpg" alt="sample">     </div>
+            <a href="img/fb_mascot.jpg" data-lightbox="image-1">
+							<img class="responsive-img" src="img/fb_mascot.jpg" alt="sample"></a>
+            <a href="img/fb_mascot02.png" data-lightbox="image-1">&nbsp;</a>
+          </div>
 
           <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1" data-sort="value">
-            <img class="responsive-img" src="img/card_vision.jpg" alt="sample">     </div>
+            <a href="img/card_vision.jpg" data-lightbox="image-2">
+							<img class="responsive-img" src="img/card_vision.jpg" alt="sample"></a>     </div>
 
           <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1" data-sort="value">
-            <img class="responsive-img" src="img/header_design.jpg" alt="sample">     </div>
+            <a href="img/header_design.jpg" data-lightbox="image-3">
+							<img class="responsive-img" src="img/header_design.jpg" alt="sample"></a>     </div>
 
           <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 2, 5, 6" data-sort="value">
-            <img class="responsive-img" src="img/game_m1.jpg" alt="sample">     </div>
+            <a href="img/game_m1.jpg" data-lightbox="image-4">
+            <img class="responsive-img" src="img/game_m1.jpg" alt="sample"></a>    
+						<a href="img/game_m1_01.jpg" data-lightbox="image-4">&nbsp;</a>
+						<a href="img/game_m1_02.jpg" data-lightbox="image-4">&nbsp;</a>
+						<a href="img/game_m1_03.jpg" data-lightbox="image-4">&nbsp;</a>
+						<a href="img/game_m1_04.jpg" data-lightbox="image-4">&nbsp;</a>
+					</div>
 
           <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1" data-sort="value">
-            <img class="responsive-img" src="img/bii_anniversary.jpg" alt="sample">     </div>
+            <a href="img/bii_anniversary.jpg" data-lightbox="image-5">
+            <img class="responsive-img" src="img/bii_anniversary.jpg" alt="sample"></a>     </div>
 
           <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="4, 1" data-sort="value">
-            <img class="responsive-img" src="img/anim_storyboard.png" alt="sample">     </div>
+            <a href="img/anim_storyboard.png" data-lightbox="image-6">
+            <img class="responsive-img" src="img/anim_storyboard.png" alt="sample"></a>     </div>
 
           <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="4, 1" data-sort="value">
-            <img class="responsive-img" src="img/anim.png" alt="sample">     </div>
+            <a href="img/anim.png" data-lightbox="image-7">
+            <img class="responsive-img" src="img/anim.png" alt="sample"></a>     </div>
 
           <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2, 1" data-sort="value">
-            <img class="responsive-img" src="img/web_bb.png" alt="sample">     </div>
+            <a href="img/web_bb.png" data-lightbox="image-8">
+            <img class="responsive-img" src="img/web_bb.png" alt="sample"></a>     </div>
 
           <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3, 2" data-sort="value">
-            <img class="responsive-img" src="img/web_mulitlang.png" alt="sample">     </div>
+            <a href="img/web_mulitlang.png" data-lightbox="image-9">
+            <img class="responsive-img" src="img/web_mulitlang.png" alt="sample"></a>     </div>
 
           <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2, 1, 3" data-sort="value">
-            <img class="responsive-img" src="img/edm.jpg" alt="sample">     </div>
+            <a href="img/edm.jpg" data-lightbox="image-10">
+            <img class="responsive-img" src="img/edm.jpg" alt="sample"></a>     </div>
 
           <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3, 2" data-sort="value">
-            <img class="responsive-img" src="img/form_snow.png" alt="sample">     </div>
+            <a href="img/form_snow.png" data-lightbox="image-11">
+	          <img class="responsive-img" src="img/form_snow.png" alt="sample"></a>     </div>
         </div>
       </div>
     </div>
@@ -101,6 +119,7 @@
 	</footer> -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
+  <script src="dist/js/lightbox-plus-jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/1.2.5/jquery.filterizr.min.js"></script>
   <script>
     $(function() {
