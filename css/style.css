@@ -1,3 +1,4 @@
+/* stickyfooter */
 body {
   display: flex;
   min-height: 100vh;
@@ -8,6 +9,7 @@ main {
   flex: 1 0 auto;
 }
 
+
 .center {
   margin: auto;
   width: 80%;
@@ -15,8 +17,6 @@ main {
 }
 
 ul {
-  /* margin: auto; */
-  background-color: coral;
 }
 
 li {
@@ -25,12 +25,9 @@ li {
   cursor: pointer;
 }
 
-/* --- */
-
 .select-container {
   margin: auto;
   padding: 5px 0px 50px;
-  /* background-color: yellow; */
 }
 
 .parallax-container {
@@ -38,11 +35,15 @@ li {
 }
 
 .filtr-item img{
-  width:540px;
+  width:300px;
 }
-/* .parallax img {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-} */
+
+.heroBG{
+
+}
+
+.skillBG{
+  /* max-width: 500px;
+  max-height: 500px; */
+  background-color: "black";
+}
