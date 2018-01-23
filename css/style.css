@@ -36,7 +36,7 @@ li {
 }
 
 .parallax-container {
-  height: 800;
+  height: 800px;
 }
 
 .filtr-item img{
@@ -44,4 +44,21 @@ li {
 }
 
 .skillBG{
+}
+
+#heroTxt {
+  font-family: 'Balthazar', serif;
+}
+
+.svgcontainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height:400px;
 }
