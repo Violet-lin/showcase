@@ -1,13 +1,3 @@
-/* stickyfooter */
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-main {
-  flex: 1 0 auto;
-}
 
 .center {
   margin: auto;
@@ -15,14 +5,12 @@ main {
   max-width: 980;
 }
 
-ul {
+.parallax-container {
+  height: 100vh; /* cover first screen */
 }
 
-li {
-  float: left;
-  padding: 20px;
-  cursor: pointer;
-  /* add cursor */
+.gallery_divider{
+  height: 25px;
 }
 
 .select-container {
@@ -30,20 +18,15 @@ li {
   padding: 5px 0px 50px;
 }
 
-.gallery_divider{
-  height: 25px;
-
-}
-
-.parallax-container {
-  height: 800px;
+li {
+  float: left;
+  padding: 20px;
+  cursor: pointer;
+  /* add cursor for select*/
 }
 
 .filtr-item img{
   width:300px;
-}
-
-.skillBG{
 }
 
 #heroTxt {
