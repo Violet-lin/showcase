@@ -132,7 +132,7 @@ i.mail {
 } */
 /*---Multi---*/
 .container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 0 auto;
   max-width: 1280px;
   width: 90%;
@@ -148,7 +148,7 @@ i.mail {
   }
 }
 .row {
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
 
 }
 
@@ -179,7 +179,7 @@ i.mail {
 }
 
 .filtr-item {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   padding: 5px;
   /* width: 294px; */
   /* width: 33.3%; */
