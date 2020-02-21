@@ -38,7 +38,7 @@ $(document).ready(function() {
   var m = w - h
   $('h1').css("margin-top", m + "px")
 
-  // ===== ? ====
+  // ===== ====
 
   // $(function() {
   //   $('a[href*=#]').on('click', function(e) {
@@ -68,18 +68,42 @@ $(document).ready(function() {
   var filterizd = $('.filtr-container').filterizr({
     layout: 'sameHeight'
   });
+// ========
 
   // addition for swipebox, closing img on click on bg
-  // jQuery(function() {
-  //   jQuery(document.body)
-  //     .on('click touchend', '#swipebox-slider .current img', function(e) {
-  //       console.log("called")
-  //       return false;
-  //     })
-  //     .on('click touchend', '#swipebox-slider .current', function(e) {
-  //       jQuery('#swipebox-close').trigger('click');
-  //       console.log("called")
-  //     });
+  // $(function(){
+  //   $(document.body)
+  //       .on('click touchend','#swipebox-slider .current img', function(e){
+  //           return false;
+  //           console.log("test");
+  //       })
+  //       .on('click touchend','#swipebox-slider .current', function(e){
+  //           $('#swipebox-close').trigger('click');
+  //           console.log("test2");
+  //
+  //       });
   // });
+  // addition for swipebox, closing img on click on bg
 
+  // jQuery(function(){
+  //
+  // "use strict";
+  //
+  // jQuery(document.body)
+  //
+  // // closes when bg clicked
+  //
+  // .on('click','#swipebox-slider .current img', function(){
+  //
+  // return false;
+  //
+  // })
+  //
+  // .on('click','#swipebox-slider .current', function(){
+  //
+  // jQuery('#swipebox-close').click();
+  //
+  // });
+  //
+  // });
 });
