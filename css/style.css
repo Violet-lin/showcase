@@ -92,6 +92,10 @@
   font-size: 1.6vw;
 }
 
+.lowerView{
+  bottom: 180px;
+  position: relative;
+}
 /* .svgcontainer {
   display: -webkit-flex;
   display: -ms-flexbox;
