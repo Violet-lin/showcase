@@ -195,6 +195,7 @@ span.line {
 
 span.tLine {
   top: 0px;
+  opacity: 0;
 }
 
 span.mLine {
@@ -204,6 +205,7 @@ span.mLine {
 
 span.bLine {
   top: 26px;
+  opacity: 0;
 }
 
 .label {
@@ -222,12 +224,14 @@ div.backBtn:hover span.label {
 }
 
 div.backBtn:hover span.line {
+  opacity: 1;  
   left: -10px;
   height: 5px;
   background-color: #0085d1;
 }
 
 div.backBtn:hover span.tLine {
+  opacity: 1;
   width: 25px;
   transform: rotate(-45deg);
   left: -15px;
