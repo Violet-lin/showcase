@@ -1,4 +1,19 @@
-// ==== Parallax animation ====
+
+$(document).ready(function(){
+
+  var controller = new ScrollMagic.Controller();
+
+  var homeScrollScene = new  ScrollMagic.Scene({
+    triggerElement: '.nav-wrapper',
+    triggerHook:0.5
+  })
+  .setClassToggle('.nav-wrapper','fade-in')
+  // .addIndicators()
+  .addTo(controller);
+
+  // ==== Parallax animation ====
+
+});
 $('.parallax2').parallax();
 $('.swipebox').swipebox();
 $('h1').css({
