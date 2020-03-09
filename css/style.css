@@ -2,19 +2,22 @@
    Custom Style - Target
    ================================ */
 
-#logo {
+.hero_logo {
  width: 25%;
- /* smaller logo */
+ /* smaller hero_logo */
 }
 
-#heroTxt {
+.hero_text {
  font-family: 'Balthazar', serif;
  margin-top: 10px;
  font-size: 5vw;
 }
+.hero_text a{
+  transition: opacity .3s;
+}
 
-#heroTitle {
-
+.hero_text a:hover{
+  opacity: 0.5;
 }
 
 .select-container {
@@ -33,14 +36,23 @@
 }
 .ani1-title {
   width:50%;
-  height: 100vh;
+  /* height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center; */
 }
 .ani1-pages {
-  width:50%;
-  height: 100vh;
+  /* width:50%; */
 }
+
+.abi-pages div{
+  height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; */
+}
+
 .ani1-tail {
   width:100%;
 }
@@ -57,8 +69,8 @@
     margin: 0 auto;
     background: rgba(255,255,255,0.9) none repeat scroll 0 0;
     box-shadow: 0 0 10px #fff;
-
 }
+
 @media only screen and (max-width: 960px) and (min-width: 768px){
 .subSoundText-inner {
     max-width: 40%;
@@ -69,6 +81,85 @@
     max-width: 65%;
     /* padding: 10px 15px; */
 }}
+
+#aboutme {
+ background-image: url("../img/bg1.jpg");
+ background-position: center;
+ background-color: #fff;
+ background-size:110%;
+}
+
+#aboutme .abt_left{
+  width:50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 0 10% 10%;
+  color: #9b9b9b;
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+#aboutme .abt_right{
+  float: right;
+  width:50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid grey; */
+}
+
+#aboutme .abt_right img{
+  width:60%;
+  margin-right: 10%;
+}
+
+#aboutme .abt_thumbs img{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+}
+
+@media only screen and (max-width: 767px){
+  #aboutme .abt_left, #aboutme .abt_right, #aboutme .abt_left {
+  width:100%;
+}
+#aboutme .abt_left{
+  padding: 0 10% 0 10%;
+  height: auto;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+#aboutme .abt_text{
+  /* border: 1px solid blue; */
+}
+
+#aboutme .abt_thumbs{
+  bottom: 10px;
+  margin: 20px 0;
+  /* border: 1px solid cyan; */
+}
+
+#aboutme .abt_thumbs img{
+  position: relative;
+}
+
+#aboutme .abt_right{
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  height: auto;
+  /* border: 1px solid grey; */
+}
+
+#aboutme .abt_right img{
+  width:30%;
+  margin-right: 0%;
+}
+}
+
 /* ================================
   Custom Style - Multiple/ Reusable
   ================================ */
@@ -90,6 +181,10 @@
 }
 .sectionTitle {
   font-size: 1.6vw;
+}
+
+.fullView{
+  height: 100vh;
 }
 
 .lowerView{
@@ -134,8 +229,6 @@
   }
 }
 
-
-
 /* .gallery_divider{
   height: 25px;
 } */
@@ -154,11 +247,7 @@
 
 .parallax-container {
   height: 100vh;
-  /* cover first screen */
-}
-
-.parallax-container2 {
-  height: 150px;
+  /* overwrite default height 500px, cover first screen */
 }
 
 .row {
@@ -224,7 +313,7 @@ div.backBtn:hover span.label {
 }
 
 div.backBtn:hover span.line {
-  opacity: 1;  
+  opacity: 1;
   left: -10px;
   height: 5px;
   background-color: #0085d1;
@@ -340,7 +429,30 @@ div.backBtn:hover span.bLine {
     opacity: 0;
   }
 }
-
+/* ================================
+   Homepage - scroll animation
+   ================================ */
+   #reveal1 {
+ 		opacity: 0;
+ 		-webkit-transform: scale(0.9);
+ 			 -moz-transform: scale(0.9);
+ 				-ms-transform: scale(0.9);
+ 				 -o-transform: scale(0.9);
+ 						transform: scale(0.9);
+ 		-webkit-transition: all 1s ease-in-out;
+ 			 -moz-transition: all 1s ease-in-out;
+ 				-ms-transition: all 1s ease-in-out;
+ 				 -o-transition: all 1s ease-in-out;
+ 						transition: all 1s ease-in-out;
+ 	}
+ 	#reveal1.visible {
+ 		opacity: 1;
+ 		-webkit-transform: none;
+ 			 -moz-transform: none;
+ 				-ms-transform: none;
+ 				 -o-transform: none;
+ 						transform: none;
+ 	}
 /* ================================
    Footer
    ================================ */
