@@ -1,6 +1,6 @@
 //==== Filtr ====
 $(function() {
-  //Simple filter controls
+  //Simple filter bar controls
   $('.filtrSkill li').click(function() {
     $('.filtrSkill li').removeClass('filtr-active');
     $(this).addClass('filtr-active');
